@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using System;
 
 namespace CalcApi.Controllers
 {
@@ -9,26 +9,24 @@ namespace CalcApi.Controllers
     public class MathController : ControllerBase
     {
 
-        [HttpPost("add")]
-        public int Add(int value1, int value2)
+        private int Add(int value1, int value2)
         {
             return value1 + value2;
         }
 
-        [HttpPost("substract")]
-        public int Substract(int value1, int value2)
+
+        private int Substract(int value1, int value2)
         {
             return value1 - value2;
         }
 
-        [HttpPost("multiply")]
-        public int Multiply(int value1, int value2)
+
+        private int Multiply(int value1, int value2)
         {
             return value1 * value2;
         }
 
-        [HttpPost("divide")]
-        public int Divide(int value1, int value2)
+        private int Divide(int value1, int value2)
         {
             if (value2 == 0)
             {
@@ -41,11 +39,35 @@ namespace CalcApi.Controllers
             }
         }
 
-        //[HttpGet]
-        //public string Get()
-        //{
-        //    return "default";
-        //}
+
+        [HttpPost("Calculate")]
+        public int Calculate(int value1, int value2)
+        {
+            var calculateAction = Request.Headers["X-CalculateAction"].ToString();
+
+            switch (calculateAction)
+            {
+                case "add":
+                    return Add(value1, value2);
+
+                case "substract":
+                    return Substract(value1, value2);
+
+                case "multiply":
+                    return Multiply(value1, value2);
+
+                case "divide":
+                    return Divide(value1, value2);
+
+                default: throw new Exception("Invalid Calculate");
+
+            }
+        }
+
+
+
+
+
     }
 }
 

@@ -1,3 +1,5 @@
+using CalcApi.CustomHeaders;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,6 +11,7 @@ namespace CalcApi
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -17,9 +20,11 @@ namespace CalcApi
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+
+
             services.AddControllers();
 
-            //services.AddSwaggerGen();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -28,6 +33,7 @@ namespace CalcApi
                     Title = "Implement Swagger calc",
                     Description = "My swagger calc",
                 });
+                c.OperationFilter<CalculateAction>();
             });
         }
 
@@ -47,7 +53,9 @@ namespace CalcApi
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {
