@@ -22,7 +22,17 @@ namespace CalcApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-          
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Implement Swagger calc",
+                    Description = "My swagger calc",
+                });
+                c.OperationFilter<CalculateAction>();
+            });
+
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
 
