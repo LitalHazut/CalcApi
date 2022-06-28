@@ -27,7 +27,7 @@ namespace CalcApi.Controllers
         {
             if (value2 == 0)
             {
-                return 0;
+                 throw new Exception("Invalid Calculate");
             }
 
             else
