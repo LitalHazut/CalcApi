@@ -8,18 +8,15 @@ namespace CalcApi.Controllers
     [ApiController]
     public class MathController : ControllerBase
     {
-
         private int Add(int value1, int value2)
         {
             return value1 + value2;
         }
 
-
         private int Substract(int value1, int value2)
         {
             return value1 - value2;
         }
-
 
         private int Multiply(int value1, int value2)
         {
@@ -38,7 +35,6 @@ namespace CalcApi.Controllers
                 return value1 / value2;
             }
         }
-
 
         [HttpPost("Calculate")]
         public int Calculate(int value1, int value2)
@@ -63,11 +59,6 @@ namespace CalcApi.Controllers
 
             }
         }
-
-
-
-
-
     }
 }
 

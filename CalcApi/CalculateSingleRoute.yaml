@@ -1,0 +1,42 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://localhost:5001
+security:
+- bearerAuth: []
+paths:
+  /Math/Calculate:
+    post:
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: X-CalculateAction
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: add, substract, multiply, divide
+      responses:
+        "401":
+          description: Access token is missing or invalid
+        default:
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://localhost:5001
+    servers:
+    - url: https://localhost:5001
+components:
+  schemas: {}
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
