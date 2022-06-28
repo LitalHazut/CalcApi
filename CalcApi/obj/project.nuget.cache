@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "7OIC0SsVdYz2eiYAxivAlt10eW+LbfX1sqFisPhIEl5xO034RQwNIGtQtZMQ7wHh79kyA4lxAJkKABAGY07gnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lital\\Desktop\\CalcApi\\CalcApi\\CalcApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.20.0\\microsoft.identitymodel.abstractions.6.20.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.20.0\\microsoft.identitymodel.jsonwebtokens.6.20.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.identitymodel.logging\\6.20.0\\microsoft.identitymodel.logging.6.20.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.20.0\\microsoft.identitymodel.tokens.6.20.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.20.0\\system.identitymodel.tokens.jwt.6.20.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\lital\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
