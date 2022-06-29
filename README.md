@@ -2,7 +2,7 @@
 One RestApi written in Net.Core 3.1.
 
 ## Description
-Obtain two numeric values and perform an arithmetic operation on them.
+Obtain two numeric values and perform an operation on them.
 One post route called - Calculate containing the following steps -  add, substract, multiply, divide.
 
 ## API using Swagger
