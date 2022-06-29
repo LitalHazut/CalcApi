@@ -22,7 +22,5 @@ namespace CalcApi.CustomHeaders
                 }
             });
         }
-
-
     }
 }

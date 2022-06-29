@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace CalcApi.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [ApiController]
     public class MathController : ControllerBase
@@ -29,13 +31,13 @@ namespace CalcApi.Controllers
             {
                  throw new Exception("Invalid Calculate");
             }
-
             else
             {
                 return value1 / value2;
             }
         }
 
+        
         [HttpPost("Calculate")]
         public int Calculate(int value1, int value2)
         {
